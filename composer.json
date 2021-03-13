@@ -1,0 +1,17 @@
+{
+  "name": "takayyz/php8-practice",
+  "authors": [
+    {
+      "name": "Takatoshi Hino",
+      "email": "like.the.wind0306@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "app\\": "./src"
+    }
+  },
+  "require": {
+    "php": "^8.0"
+  }
+}
