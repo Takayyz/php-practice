@@ -8,4 +8,5 @@ require_once __DIR__ . '/vendor/autoload.php';
 // require_once __DIR__ . '/src/04_nullable_operator.php';
 // require_once __DIR__ . '/src/05_trailing_comma_in_parameters.php';
 // require_once __DIR__ . '/src/06_match_expression.php';
-require_once __DIR__ . '/src/07_attributes.php';
+// require_once __DIR__ . '/src/07_attributes.php';
+require_once __DIR__ . '/src/08_weak_map.php';
