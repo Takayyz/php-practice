@@ -8,7 +8,7 @@ use app\attributes\ProductDeleted;
 class ProductSubscriber
 {
     #[
-        \app\attribute\SampleAttrobite('hoge'),
+        \app\attribute\SampleAttribute('hoge'),
         ListenTo(\app\attributes\Product::EVENT_CREATED)
     ]
     public function onProductCreated(ProductCreated $event) { /* _ */ }

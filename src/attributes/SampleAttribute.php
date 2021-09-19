@@ -3,7 +3,7 @@
 namespace app\attributes;
 
 #[Attribute]
-class SampleAttrobite
+class SampleAttribute
 {
 
     public function __construct(public string $event)
