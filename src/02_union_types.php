@@ -4,14 +4,21 @@ class UnionTypes {
     /**
      * @var int|float
      */
-    public $number;
+    public int|float $number;
 
-    public function setNumber(int|float $number)
+    /**
+    * @param int|float $number
+    * @return void
+    */
+    public function setNumber(int|float $number): void
     {
         $this->number = $number;
     }
 
-    public function getNumber()
+    /**
+    * @return int|float
+    */
+    public function getNumber(): int|float
     {
         return $this->number;
     }
