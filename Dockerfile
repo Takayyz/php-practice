@@ -1,4 +1,4 @@
-FROM php:8.2-cli-alpine3.17
+FROM php:8.3-rc-cli-alpine3.18
 
 LABEL maintainer Takayyz
 
@@ -9,4 +9,4 @@ RUN ["chmod", "744", "/etc/entrypoint.sh"]
 
 WORKDIR /var/tmp
 
-ENTRYPOINT /etc/entrypoint.sh
+ENTRYPOINT ["/etc/entrypoint.sh"]

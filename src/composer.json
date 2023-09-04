@@ -1,5 +1,5 @@
 {
-  "name": "takayyz/php8-sandbox",
+  "name": "takayyz/php-sandbox",
   "authors": [
     {
       "name": "Takatoshi Hino",
@@ -12,6 +12,6 @@
     }
   },
   "require": {
-    "php": "^8.2"
+    "php": "^8.3"
   }
 }
