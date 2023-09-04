@@ -1,7 +1,13 @@
 # php-practice
 Just a trial for php features
 
+## Environment
 |PHP|
 |---|
-|^8.1|
+|^8.2|
 
+## Usage
+
+```sh
+make start
+```

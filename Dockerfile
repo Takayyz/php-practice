@@ -1,4 +1,4 @@
-FROM php:8.1.23RC1-cli-alpine3.18
+FROM php:8.2-cli-alpine3.17
 
 LABEL maintainer Takayyz
 

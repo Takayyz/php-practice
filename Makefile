@@ -6,5 +6,5 @@ help: ## makeコマンドのサブコマンドリストと、各コマンドの�
 
 .PHONY := start
 start: ## PHPコンテナをインタラクティブモードで起動(停止後コンテナは自動削除)
-	@docker build -t php-sandbox:8.1 .
-	@docker run -it --rm --name php-sandbox -v $(MAKEFILE_DIR)/src:/var/tmp php-sandbox:8.1 && rm -rf ./src/vendor
+	@docker build -t php-sandbox:8.2 .
+	@docker run -it --rm --name php-sandbox -v $(MAKEFILE_DIR)/src:/var/tmp php-sandbox:8.2 && rm -rf ./src/vendor

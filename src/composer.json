@@ -1,5 +1,5 @@
 {
-  "name": "takayyz/php8-practice",
+  "name": "takayyz/php8-sandbox",
   "authors": [
     {
       "name": "Takatoshi Hino",
@@ -8,10 +8,10 @@
   ],
   "autoload": {
     "psr-4": {
-      "app\\": "./src"
+      "app\\": "./"
     }
   },
   "require": {
-    "php": "^8.0"
+    "php": "^8.2"
   }
 }
