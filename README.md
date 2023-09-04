@@ -1,4 +1,4 @@
-# php-practice
+# php-sandbox
 Just a trial for php features
 
 |PHP|
