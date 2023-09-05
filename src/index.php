@@ -2,4 +2,21 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-echo phpversion() . "\n";
+function devider(): void
+{
+    echo "#############################\n";
+}
+
+function newLine(): void
+{
+    echo "\n";
+}
+
+devider();
+echo 'Version: ' . phpversion() . "\n";
+devider();
+newLine();
+
+require_once __DIR__ . '/01_making_overridden_method.php';
+
+newLine();
