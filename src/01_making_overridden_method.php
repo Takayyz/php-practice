@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+echo "---------- Making overridden method (#[\Override]) ----------\n";
+
 /**
  * memo:
  * 子クラスが親クラスの構造を意識した実装をしたい場合、
