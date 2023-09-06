@@ -22,3 +22,6 @@ newLine();
 
 require_once __DIR__ . '/02_saner_inc_dec_operators.php';
 newLine();
+
+require_once __DIR__ . '/03_arbitrary_static_variable_initializers.php';
+newLine();
