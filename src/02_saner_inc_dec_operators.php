@@ -14,21 +14,50 @@ echo "---------- Path to Saner Increment/Decrement operators ----------\n";
 
 // INFO: intへdecrementなので問題なし
 $i = 10;
-var_dump($i - 1); // 9
-var_dump(--$i); // 9
+var_dump($i - 1); // int(9)
+var_dump(--$i); // int(9)
 
 $n = null;
-var_dump($n - 1); // -1
+var_dump($n - 1); // int(-1)
 /**
- * INFO: 現段階ではWarning
  * Warning: Decrement on type null has no effect, this will change in the next major version of PHP
  */
 var_dump(--$n); // null
 
-$s = 'foo';
-var_dump($s - 1); // Fatal error
-var_dump(--$s); // 'foo'
+var_dump($n + 1); // int(1)
+var_dump(++$n); // int(1)
 
-var_dump($s + 1); // Fatal error
-// INFO: Deprecatedが出ない...？
-var_dump(++$s); // 'fop'
+/**
+ * Warning: Decrement(Increment) on type bool has no effect, this will change in the next major version of PHP
+ */
+$false = false;
+var_dump(--$false); // false
+var_dump(++$false); // false
+
+/**
+ * Warning: Decrement(Increment) on type bool has no effect, this will change in the next major version of PHP
+ */
+$true = true;
+var_dump(--$true);
+var_dump(++$true);
+
+$s = 'foo';
+// var_dump($s - 1); // Fatal error
+/**
+ * Deprecated: Decrement on non-numeric string has no effect and is deprecated
+ */
+var_dump(--$s); // string('foo')
+
+// var_dump($s + 1); // Fatal error
+var_dump(++$s); // string('fop')
+
+/**
+ * Deprecated: Decrement on empty string is deprecated as non-numeric
+ */
+$emptyString1 = '';
+var_dump(--$emptyString1);
+/**
+ * Deprecated: Increment on non-alphanumeric string is deprecated
+ */
+$emptyString2 = '';
+var_dump(++$emptyString2);
